@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"jsonplaceholder\/comments\/comments[1:7]","start":1721461898177,"end":1721461898869,"title":"jsonplaceholder\/comments\/comments[1:7] 15:51:38.177-15:51:38.869 Get all comments"},{"id":2,"group":1,"content":"jsonplaceholder\/comments\/comments[2:13]","start":1721461898883,"end":1721461898928,"title":"jsonplaceholder\/comments\/comments[2:13] 15:51:38.883-15:51:38.928 Get comments for a specific post"},{"id":3,"group":1,"content":"jsonplaceholder\/comments\/comments[3:19]","start":1721461898935,"end":1721461899767,"title":"jsonplaceholder\/comments\/comments[3:19] 15:51:38.935-15:51:39.767 Create a new comment"},{"id":4,"group":1,"content":"jsonplaceholder\/comments\/comments[4.1:33]","start":1721461899773,"end":1721461899811,"title":"jsonplaceholder\/comments\/comments[4.1:33] 15:51:39.773-15:51:39.811 Verify comment emails"},{"id":5,"group":1,"content":"jsonplaceholder\/comments\/comments[4.2:34]","start":1721461899815,"end":1721461899850,"title":"jsonplaceholder\/comments\/comments[4.2:34] 15:51:39.815-15:51:39.850 Verify comment emails"},{"id":6,"group":1,"content":"jsonplaceholder\/comments\/comments[4.3:35]","start":1721461899856,"end":1721461899895,"title":"jsonplaceholder\/comments\/comments[4.3:35] 15:51:39.856-15:51:39.895 Verify comment emails"},{"id":7,"group":1,"content":"jsonplaceholder\/posts\/posts[1:7]","start":1721461900358,"end":1721461900403,"title":"jsonplaceholder\/posts\/posts[1:7] 15:51:40.358-15:51:40.403 Get all posts"},{"id":8,"group":1,"content":"jsonplaceholder\/posts\/posts[2:13]","start":1721461900409,"end":1721461901227,"title":"jsonplaceholder\/posts\/posts[2:13] 15:51:40.409-15:51:41.227 Get posts for a specific user"},{"id":9,"group":1,"content":"jsonplaceholder\/posts\/posts[3:19]","start":1721461901231,"end":1721461902029,"title":"jsonplaceholder\/posts\/posts[3:19] 15:51:41.231-15:51:42.029 Create a new post"},{"id":10,"group":1,"content":"jsonplaceholder\/posts\/posts[4:25]","start":1721461902033,"end":1721461902845,"title":"jsonplaceholder\/posts\/posts[4:25] 15:51:42.033-15:51:42.845 Update a post"},{"id":11,"group":1,"content":"jsonplaceholder\/posts\/posts[5:32]","start":1721461902849,"end":1721461903643,"title":"jsonplaceholder\/posts\/posts[5:32] 15:51:42.849-15:51:43.643 Delete a post"},{"id":12,"group":1,"content":"jsonplaceholder\/users\/users[1:7]","start":1721461903728,"end":1721461903764,"title":"jsonplaceholder\/users\/users[1:7] 15:51:43.728-15:51:43.764 Get all users"},{"id":13,"group":1,"content":"jsonplaceholder\/users\/users[2:13]","start":1721461903768,"end":1721461903802,"title":"jsonplaceholder\/users\/users[2:13] 15:51:43.768-15:51:43.802 Get a specific user"},{"id":14,"group":1,"content":"jsonplaceholder\/users\/users[3:19]","start":1721461903806,"end":1721461904621,"title":"jsonplaceholder\/users\/users[3:19] 15:51:43.806-15:51:44.621 Create a new user"},{"id":15,"group":1,"content":"jsonplaceholder\/users\/users[4.1:33]","start":1721461904625,"end":1721461904659,"title":"jsonplaceholder\/users\/users[4.1:33] 15:51:44.625-15:51:44.659 Verify user emails"},{"id":16,"group":1,"content":"jsonplaceholder\/users\/users[4.2:34]","start":1721461904663,"end":1721461904700,"title":"jsonplaceholder\/users\/users[4.2:34] 15:51:44.663-15:51:44.700 Verify user emails"},{"id":17,"group":1,"content":"jsonplaceholder\/users\/users[4.3:35]","start":1721461904704,"end":1721461905503,"title":"jsonplaceholder\/users\/users[4.3:35] 15:51:44.704-15:51:45.503 Verify user emails"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
