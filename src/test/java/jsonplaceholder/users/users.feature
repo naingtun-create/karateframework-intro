@@ -10,6 +10,16 @@ Scenario: Get all users
   And match response == '#[10]'
   And match each response contains { id: '#number', name: '#string', email: '#string' }
 
+Scenario: Get all users and export to CSV
+  When method GET
+  Then status 200
+  And match response == '#[10]'
+  And match each response contains { id: '#number', name: '#string', email: '#string' }
+  * def csvData = karate.map(response, function(x){ return x.id + ',' + x.name + ',' + x.username + ',' + x.email })
+  * def csvHeader = 'id,name,username,email'
+  * def csvContent = csvHeader + '\n' + csvData.join('\n')
+  * karate.write(csvContent, 'users.csv')
+  
 Scenario: Get a specific user
   Given path '1'
   When method GET
