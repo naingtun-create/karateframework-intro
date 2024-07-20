@@ -46,8 +46,8 @@ jsonplaceholder-api-tests/
 ## Setup and Execution
 
 1. Ensure you have Java and Maven installed on your system.
-2. Clone this repository:
-3. Navigate to the project directory:
+2. Clone this repository: https://github.com/naingtun-create/karateframework-intro.git
+3. Navigate to the project directory: cd "projectdirectory"
 4. Run the tests using Maven: mvn test
 
 ## Reporting
