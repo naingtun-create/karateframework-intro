@@ -8,11 +8,33 @@ This project demonstrates the use of Karate Framework to test the JSONPlaceholde
 
 When developing applications that interact with RESTful APIs, it's crucial to ensure that the API behaves as expected. This test suite aims to verify the functionality of the JSONPlaceholder API, covering various scenarios such as retrieving data, creating new resources, updating existing ones, and deleting them.
 
+## Karate Framework vs Python Scripts for API Testing
+
+|   | Karate Framework | Python Scripts |
+| ------------- | ------------- | ------------- |
+| Ease of Use  | Built in Syntax even for non-developers  | Require Python knowledge and understanding of code  |
+| Features  | Integrated API Testing and Mocking  | Requires additional libraries and setup to utilise extra features  |
+| Built in Reporting  | Detailed HTML reports generated  | Libraries like pytest-html or create custom reports using Python libraries.  |
+| Flexibility  | Less flexibility for complex test scenarios or custom logic  | Python allows for fine-grained control and flexibility. You can write highly customized tests and integrate complex logic as needed.  |
+
+## When to use Karate Framework vs Python Scripts
+
+Choose Karate Framework if:
+- You prefer a DSL (domain specific language) that simplifies API testing and reduces boilerplate code.
+- You are working on a Java project and need integrated API testing with built-in reporting.
+- You need out-of-the-box support for mocking and parallel execution.
+
+Choose Python Scripts if:
+- You need maximum flexibility and control over your test scenarios and custom logic.
+- You prefer using Python's extensive libraries and want to integrate with various tools and services.
+- You are already comfortable with Python and want to leverage its simplicity and readability for writing test scripts.
+
 ## Features Tested
 
-- Users API
-- Posts API
-- Comments API
+- Comments API (src/test/java/jsonplaceholder/comments/comments.feature)
+- Posts API (https://github.com/naingtun-create/karateframework-intro/tree/main/src/test/java/jsonplaceholder/posts)
+- Users API (https://github.com/naingtun-create/karateframework-intro/tree/main/src/test/java/jsonplaceholder/users)
+
 
 ## Karate Framework Features Showcased
 
