@@ -31,7 +31,7 @@ Choose Python Scripts if:
 
 ## Features Tested
 
-- Comments API (https://github.com/naingtun-create/karateframeworkintro/blob/main/src/test/java/jsonplaceholder/comments/comments.feature)
+- Comments API (https://github.com/naingtun-create/karateframework-intro/tree/main/src/test/java/jsonplaceholder/comments/comments.feature)
 - Posts API (https://github.com/naingtun-create/karateframework-intro/tree/main/src/test/java/jsonplaceholder/posts/posts.feature)
 - Users API (https://github.com/naingtun-create/karateframework-intro/tree/main/src/test/java/jsonplaceholder/users/users.feature)
 
