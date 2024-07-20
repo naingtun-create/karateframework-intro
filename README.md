@@ -34,6 +34,10 @@ When developing applications that interact with RESTful APIs, it's crucial to en
 
 After test execution, you can find the Karate report in the `target/karate-reports/` directory. Open the `karate-summary.html` file in a web browser to view the detailed test results.
 
+![image](https://github.com/user-attachments/assets/04f190e8-d6e3-4ac9-a64f-9b2d8cde0b6b)
+![image](https://github.com/user-attachments/assets/c406cf8b-d37c-41e1-bdf5-dc9675a31060)
+
+
 ## Contributing
 
 Feel free to fork this project and submit pull requests with improvements or additional test scenarios.
