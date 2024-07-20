@@ -23,26 +23,6 @@ When developing applications that interact with RESTful APIs, it's crucial to en
 - Parameterization
 - Response matching and assertions
 
-## Project Structure
-
-jsonplaceholder-api-tests/
-├── src/
-│ └── test/
-│ ├── java/
-│ │ └── jsonplaceholder/
-│ │ ├── users/
-│ │ │ └── users.feature
-│ │ ├── posts/
-│ │ │ └── posts.feature
-│ │ ├── comments/
-│ │ │ └── comments.feature
-│ │ └── TestRunner.java
-│ └── resources/
-│ ├── karate-config.js
-│ └── logback-test.xml
-├── pom.xml
-└── README.md
-
 ## Setup and Execution
 
 1. Ensure you have Java and Maven installed on your system.
